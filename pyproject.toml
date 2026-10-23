@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plagx-preflight"
+version = "0.1.2"
+description = "Free draft checker for essays and papers: word count, citation and reference list checks, punctuation and basic grammar suggestions, readability stats. Runs offline. By Plagiarism Checker X."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Plagiarism Checker X" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = [
+    "draft-checker", "essay-checker", "grammar-checker", "word-count", "citation-checker",
+    "reference-list", "apa", "mla", "readability", "flesch", "punctuation", "academic-writing", "students",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Education",
+    "Topic :: Text Processing :: Linguistic",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/plagiarismcheckerx/plagx-preflight-python"
+Source = "https://github.com/plagiarismcheckerx/plagx-preflight-python"
+Issues = "https://github.com/plagiarismcheckerx/plagx-preflight-python/issues"
+Demo = "https://plagiarismcheckerx.github.io/plagx-preflight/"
+Changelog = "https://github.com/plagiarismcheckerx/plagx-preflight-python/blob/main/CHANGELOG.md"
+
+[project.scripts]
+plagx-preflight = "plagx_preflight.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+plagx_preflight = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
