@@ -32,7 +32,7 @@ def test_helpers():
     assert [f"{x['key']}:{x['year']}" for x in c] == ["moore:2011", "price:2016", "price:2018"]
     assert c[0]["start"] == 3
     assert [x["key"] for x in find_citations("(Greenblatt 45)", "mla")] == ["greenblatt"]
-    assert VERSION == "0.1.2" and "passive-voice" in CHECKS
+    assert VERSION == "0.1.3" and "passive-voice" in CHECKS
 
 
 def test_options():

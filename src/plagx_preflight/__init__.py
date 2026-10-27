@@ -14,7 +14,7 @@ from . import _checks, _citations
 from ._text import count_words as _count_words
 from ._text import line_index, line_starts, paragraph_sentences, split_sentences as _split_sentences, structure, syllables, words
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 VERSION = __version__
 
 #: Check groups. "passive-voice" is off by default.

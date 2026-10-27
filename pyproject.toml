@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "plagx-preflight"
-version = "0.1.2"
+version = "0.1.3"
 description = "Free draft checker for essays and papers: word count, citation and reference list checks, punctuation and basic grammar suggestions, readability stats. Runs offline. By Plagiarism Checker X."
 readme = "README.md"
 license = "MIT"
